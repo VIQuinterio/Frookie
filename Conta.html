@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conta</title>
+    <link rel="icon" href="fotos/PicsArt_10-25-04.46.37.ico" type="imagem/ico">
+    <style type="text/css">@import "css/contrast.css";</style>
+    <style type="text/css">@import "css/w3.css";</style>
+    <style type="text/css">@import "css/navbar.css";</style>
+    <style>
+      body,
+      html {height: 100%}
+      body,h1,h2,h3,h4,h5,h6 { font-family: "Amatic SC", sans-serif }
+      @font-face {font-family: Amatic SC;src: url(fonte/amatic-sc.ttf);}
+      body {background-color: #DEB887;}
+
+      .dropdown:hover .dropdown-content {display: block;}
+      * {
+        box-sizing: border-box;
+      }
+      /* Create three unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 80px;
+        height: 625px; /* Should be removed. Only for demonstration */
+      }
+      /* Left and right column */
+      .column.side {width: 40%;}
+
+      /* Middle column */
+      .column.middle {width: 60%;}
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media (max-width: 600px) {.column.side, .column.middle {width: 100%;}}
+
+    </style>
+  </head>
+
+  <body>
+    <header class="w3-top w3-hide-small" role="navigation">
+      <nav class="w3-bar w3-xlarge w3-brown " id="myNavbar">      
+        <a href="index.html" accesskey="1"class="w3-bar-item w3-button"><img src="fotos/logo.png" class="ico" alt="Logo da empresa Frookie"></a>
+        <a href="Sobre.html"  accesskey="2" class="w3-bar-item w3-button">SOBRE NÓS </a>
+        <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" class="w3-bar-item w3-button"> Alto contraste </a>
+        <div class="dropdown">
+          <button class="dropbtn ">PRODUTO</button>
+          <div class="dropdown-content">
+            <a href="Menu.html"  accesskey="4" class="w3-bar-item w3-button">MENU </a>
+            <a href="SobreProduto.html"  accesskey="5" class="w3-bar-item w3-button">PRODUTO </a>
+          </div>
+       </div>     
+        <a href="carrinho.html"  accesskey="9" class="w3-right w3-bar-item w3-button"><img style="width: 40px; height: 38px; padding: 0px;" src="fotos/carrinhobranco.png" alt="carrinho de compras "> </a>  
+       <div class="dropdown w3-right ">
+        <button class="dropbtn ">MINHA CONTA</button>
+        <div class="dropdown-content ">
+          <a href="Cadastrar.html"  accesskey="6" class="w3-bar-item w3-button">CADASTRAR</a>
+          <a href="Login.html"  accesskey="7" class="w3-bar-item w3-button">LOGIN</a>
+          <a href="Adiministrador.html" accesskey="8" class=" w3-bar-item w3-button">Área Restrita</a>
+        </div>
+     </div>
+    </nav>
+    </header>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    <div class="row">
+      <div class="column side" style="background-color:black;"><center><br><br><br><img src="fotos/pessoabranca.png" style="width:150px;"
+        alt="Fundador da Frookie"></center><br>
+    <center>
+    <h2  style="font-size: 30px; color:white"><b>Nome</b></h2>
+    </center><br><br><br><br><br><br><br><br>
+    <a href="Login.html" style="font-size: 30px; color:white"><b>Sair</b></a></div>
+    <div class="column middle" style="background-color:rgb(255, 255, 255); font-size: 30px;"><h2><b>Informações pessoais</b></h2>
+        <a href="#" style="font-size: 25px;"><b>Alterar informações pessoais</b></a><br>
+        <a href="#" style="font-size: 25px;"><b>Excluir Conta</b></a><br><br>
+        <h2 style="font-size: 30px;"><b>Informações de segurança</b></h2>
+        <a href="#" style="font-size: 25px;"><b>Alterar e-mail</b></a><br>
+        <a href="#" style="font-size: 25px;"><b>Alterar senha</b></a><br>
+        <a href="#" style="font-size: 25px;"><b>Pergunta de segurança</b></a></div>
+    </div>
+  </body>
+
+</html>

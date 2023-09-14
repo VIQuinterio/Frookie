@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Produto</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <link rel="icon" href="fotos/PicsArt_10-25-04.46.37.ico" type="imagem/ico">
+  <style type="text/css">@import "css/parallax.css";</style>
+  <style type="text/css">@import "css/contrast.css";</style>
+  <style type="text/css">@import "css/w3.css";</style>
+  <style type="text/css">@import "css/navbar.css";</style>
+  <style>
+    body, html {height: 100%}
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+    @font-face {font-family: Amatic SC;src: url(fonte/amatic-sc.ttf);}
+    span { font-size: 200px; }
+
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    table, td, th {border: 1px solid black;}
+    
+    table {border-collapse: collapse; width: 100%;}
+    
+    th {height: 50px;}
+    .body {
+    background-color: rgb(116, 71, 71);
+    }
+  </style>             
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<header class="w3-top w3-hide-small" role="navigation">
+  <nav class="w3-bar w3-xlarge w3-brown " id="myNavbar">      
+    <a href="index.html" accesskey="1"class="w3-bar-item w3-button"><img src="fotos/logo.png" class="ico" alt="Logo da empresa Frookie"></a>
+    <a href="Sobre.html"  accesskey="2" class="w3-bar-item w3-button">SOBRE NÓS </a>
+    <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" class="w3-bar-item w3-button"> Alto contraste </a>
+    <div class="dropdown">
+      <button class="dropbtn ">PRODUTO</button>
+      <div class="dropdown-content">
+        <a href="Menu.html"  accesskey="4" class="w3-bar-item w3-button">MENU </a>
+        <a href="SobreProduto.html"  accesskey="5" class="w3-bar-item w3-button">PRODUTO </a>
+      </div>
+   </div>     
+    <a href="carrinho.html"  accesskey="9" class="w3-right w3-bar-item w3-button"><img style="width: 40px; height: 38px; padding: 0px;" src="fotos/carrinhobranco.png" alt="carrinho de compras "> </a>  
+   <div class="dropdown w3-right ">
+    <button class="dropbtn ">MINHA CONTA</button>
+    <div class="dropdown-content ">
+      <a href="Cadastrar.html"  accesskey="6" class="w3-bar-item w3-button">CADASTRAR</a>
+      <a href="Login.html"  accesskey="7" class="w3-bar-item w3-button">LOGIN</a>
+      <a href="Adiministrador.html" accesskey="8" class=" w3-bar-item w3-button">Área Restrita</a>
+    </div>
+ </div>
+</nav>
+</header>
+ <!-- Conteúdo da página -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <!-- About Container -->
+  <article class="w3-container w3-padding-64 w3-brightness w3-xlarge body" >
+    <div class="w3-content">
+      <h1 style="font-size:50px; color: white; font-weight: bolder;"><b>BISCOITO DE CARAMBOLA</b></h1><br>
+      <h2 style="color: white;"><b>Veja os benefícios do biscoito de carambola.</b></h2><br>
+      <h2 style="color: white; text-align: justify;"><b>A aveia tem grande concentração de fibras solúveis, seu consumo regular está relacionado à menor absorção do colesterol da dieta. 
+      Isso auxilia o tratamento e a manutenção dos níveis de colesterol sanguíneo e o funcionamento regular do intestino.</b>
+      <img src="fotos/Aveia.jpg" style="width:200px"class="w3-circle w3-right" alt="Aveia"></h2>
+      <br><br><br><br>
+      <h2 style="color: white; text-align: justify;"><b>A carambola por ser rica em vitaminas, como a vitamina A, C e do complexo B e fortalece o sistema imunológico. 
+      Além disso, age como antioxidante, fazendo com que o corpo seja capaz de combater os radicais livres. 
+      Já as vitaminas do complexo B (riboflavina, piridoxina) atuam favorecendo o metabolismo e várias outras funções dentro do corpo. 
+      O potássio da carambola ajuda o sistema sanguíneo, diminuindo a pressão e regulando os batimentos cardíacos.</b>
+      <img src="fotos/carambola1.jpeg" style="width:200px"class="w3-circle w3-right" alt="Carambola"></h2><br>
+      <p style="color: white;"><strong>Criada com amor por</strong> <b>Willyan, Victória, Beatriz, Ana e Tomás</b></p><br><br><br><br>
+      <center><h1 style="color: white;"><b>Informções Nutricionais</b></h1></center>  
+      <div class="container">
+        <table class="bordered striped centered" id="tab">
+          <thead>      
+            <tr>
+              <caption style="color: white;"><b>BISCOITO DE AVEIA E CARAMBOLA</b></caption>
+            </tr>
+            <tr>
+              <caption style="color: white;"><b>PORÇÃO DE 100g (6 unidades)</b></caption>             
+            </tr>
+            <tr>
+              <th style="background-color: black; color: white;"> </th>
+              <th style="background-color:black; color: white;">Quantidade por porção</th>
+              <th style="background-color: black; color: white;">% VD (*)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="background-color: rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;Valor energético</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;564kcal=2.361kJ</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;28%</b></td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;Carboidratos</b></td>
+              <td style="background-color: rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;98g</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;33%</b></td>
+            </tr>
+            <tr>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;Proteínas</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;7,6g</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;10%</b></td>
+            </tr>
+            <tr>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;Gorduras totai</b>s</td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;17g</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;31%</b></td>
+            </tr>
+            <tr>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;Gorduras saturadas</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;8,7g</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;40%</b></td>
+            </tr>
+            <tr>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;Gorduras trans</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;0g</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;(**)</b></td>
+            </tr>
+            <tr>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;Fibra alimentar</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;4,6g</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;19%</b></td>
+            </tr>
+            <tr>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;Sódio</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;314mg</b></td>
+              <td style="background-color:  rgb(116, 111, 111); color: white;"><b>&nbsp; &nbsp; &nbsp; &nbsp;13%</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>   
+      <p style="color: white;"><b>(*) % Valores Diários de referência com base em uma dieta de 2.000 kcal ou 8400 kJ. 
+      Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas.</b></p> 
+      <p style="color: white;"><b>(**) VD não estabelecido.</b></p>  
+      <p style="color: white;"><b>Ingredientes: Aveia em flocos, carambola, açúcar demerara, margarina, ovo de galinha, fermento em pó<br></p>
+      <p style="color: white;"><b><strong>NÃO CONTÉM GLÚTEN</b></strong> 
+      <p style="color: white;"><b><strong>ALÉRGICOS: CONTÉM LEITE, OVOS, DERIVADOS DE LEITE, SOJA.</strong></b></p>            
+      <br><br>
+      <p style="color: white; font-size: larger;">Vídeo da produção do biscoito de carambola</p>
+      <video width="400" height="340" controls><source src="video/frookie.mp4" type="video/mp4"></video>
+    </div>
+  </article> 
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-48 w3-xlarge">
+   <!--Container e margin junto arruma o texto deixa ele com margem e o justify deixa o texto justificado-->
+   <div class="w3-margin">
+      <p align="left"> Fale conosco: (13) 3467-2955 ou nos <a href="Contato.html" accesskey="0" target="_blank" class="w3-hover-text-brown">envie uma mensagem</a> </p>      
+      <p align="left"><b>Horário de funcionamento</b></p>
+      <div class="w3-col s6">
+        <p align="left">Segunda a Sexta feira <time>9:00 ás 21:00</time></p>
+        <p align="left">Sábado <time>9:00 ás 18:00</time></p>
+        <p align="left">Domingo Fechado</p>
+      </div>
+   </div>
+    <!--Coodernada do maps-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14583.464185540168!2d-46.3835947!3d-23.9651765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x118a947878b90924!2sETEC%20Dra.%20Ruth%20Cardoso!5e0!3m2!1spt-BR!2sbr!4v1571594848269!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <p align="right">Endereço: Praça Cel. Lopes, 387 - Centro, São Vicente - SP, 11310-020&nbsp; &nbsp;</p>
+    <p>Criado por <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-brown">Frookie</a></p> 
+  </footer>
+  <script src="./js/high-contrast.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contato</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <link rel="icon" href="fotos/PicsArt_10-25-04.46.37.ico" type="imagem/ico">
+  <style type="text/css">@import "css/contrast.css";</style>
+  <style type="text/css">@import "css/w3.css";</style>
+  <style type="text/css">@import "css/navbar.css";</style>
+  <style>@font-face { font-family: Amatic SC ;src: url(fonte/amatic-sc.ttf); }</style>
+  <style>
+    body, html {height: 100%}
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+    @font-face { font-family: Amatic SC ;src: url(fonte/amatic-sc.ttf); }
+    span { font-size: 200px; }
+    
+    .dropdown:hover .dropdown-content {display: block;}
+  </style>               
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<header class="w3-top w3-hide-small" role="navigation">
+  <nav class="w3-bar w3-xlarge w3-brown " id="myNavbar">      
+    <a href="index.html" accesskey="1"class="w3-bar-item w3-button"><img src="fotos/logo.png" class="ico" alt="Logo da empresa Frookie"></a>
+    <a href="Sobre.html"  accesskey="2" class="w3-bar-item w3-button">SOBRE NÓS </a>
+    <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" class="w3-bar-item w3-button"> Alto contraste </a>
+    <div class="dropdown">
+      <button class="dropbtn ">PRODUTO</button>
+      <div class="dropdown-content">
+        <a href="Menu.html"  accesskey="4" class="w3-bar-item w3-button">MENU </a>
+        <a href="SobreProduto.html"  accesskey="5" class="w3-bar-item w3-button">PRODUTO </a>
+      </div>
+   </div>     
+    <a href="carrinho.html"  accesskey="9" class="w3-right w3-bar-item w3-button"><img style="width: 40px; height: 38px; padding: 0px;" src="fotos/carrinhobranco.png" alt="carrinho de compras "> </a>  
+   <div class="dropdown w3-right ">
+    <button class="dropbtn ">MINHA CONTA</button>
+    <div class="dropdown-content ">
+      <a href="Cadastrar.html"  accesskey="6" class="w3-bar-item w3-button">CADASTRAR</a>
+      <a href="Login.html"  accesskey="7" class="w3-bar-item w3-button">LOGIN</a>
+      <a href="Adiministrador.html" accesskey="8" class=" w3-bar-item w3-button">Área Restrita</a>
+    </div>
+ </div>
+</nav>
+</header>
+
+ <!-- Conteúdo da página -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- Contact -->
+  <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
+    <div class="w3-content">
+      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contato</h1>
+      <p><h1 class="w3-tag">Atenção</h1> Oferecemos serviço completo de cafeteria para eventos pequenos. Compreendemos as suas necessidades e atendemos a todos os gostos, de acordo com os critérios mais importantes de todos.</p>
+      <p class="w3-xxlarge"><strong>Reserve</strong> uma mesa, peça o especial de hoje ou envie-nos uma mensagem:</p>
+      <form action="http://formmail.uni5.net/formmail.cgi" method="POST" id="formulario-frookie">
+        <!--http://formmail.uni5.net/formmail.cgi em vez de thank you esta obrigado mas o caractere especial nao pega-->
+        <!--http://formmail.kinghost.net/formmail.cgi em vez de thank you mas o caractere especial nao pega-->
+        <input type="hidden" name="recipient" value="frookie@yopmail.com">
+        <input type="hidden" name="subject" value="frookie">
+        <input type="hidden" name="email" value="frookie@frookie.com">
+
+        <input class="w3-input w3-padding-16 w3-border"type="text" name="Nome" id="formulario-frookie" class="form-control" placeholder="Seu Nome"
+        required="">
+        <br>
+        <input class="w3-input w3-padding-16 w3-border" type="text" name="E-mail" id="formulario-frookie" class="form-control" placeholder="Seu Email"
+        required="">
+        <br>
+        <!-- cols="30" rows="7" TAMANHO -->
+        <textarea class="w3-input w3-padding-16 w3-border" style="resize: none" type="text" name="Mensagem" id="formulario-frookie" cols="50" rows="5" class="form-control"
+          placeholder="Mensagem" required="Mensagem">
+        </textarea>
+        <br>
+        <!-- BOTÃO ENVIAR FORMULARIO -- OK -->
+        <a href="#" class="w3-button w3-light-grey w3-block" onClick="document.getElementById('formulario-frookie').submit();">Enviar Mensagem</a>
+          &nbsp; &nbsp;&nbsp; &nbsp;<a href="#"  class="w3-button w3-light-grey w3-block" onClick="document.getElementById('formulario-frookie').reset();">Apagar</a>
+      </form>
+    </div>
+  </div> 
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-48 w3-xlarge">
+   <!--Container e margin junto arruma o texto deixa ele com margem e o justify deixa o texto justificado-->
+   <div class="w3-margin">
+      <p align="left"> Fale conosco: (13) 3467-2955 ou nos <a href="Contato.html" accesskey="0" target="_blank" class="w3-hover-text-brown">envie uma mensagem</a> </p>
+      <p align="left"><b>Horário de funcionamento</b></p>
+      <div class="w3-col s6">
+        <p align="left">Segunda a Sexta feira <time>9:00 ás 21:00</time></p>
+        <p align="left">Sábado <time>9:00 ás 18:00</time></p>
+        <p align="left">Domingo Fechado</p>
+      </div>
+   </div>
+    <!--Coodernada do maps-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14583.464185540168!2d-46.3835947!3d-23.9651765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x118a947878b90924!2sETEC%20Dra.%20Ruth%20Cardoso!5e0!3m2!1spt-BR!2sbr!4v1571594848269!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <p align="right">Endereço: Praça Cel. Lopes, 387 - Centro, São Vicente - SP, 11310-020&nbsp; &nbsp;</p>
+    <p>Criado por <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-brown">Frookie</a></p> 
+  </footer>
+  <script src="./js/high-contrast.js"></script>
+</body>
+</html>

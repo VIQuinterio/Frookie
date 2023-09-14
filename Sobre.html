@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sobre</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <link rel="icon" href="fotos/PicsArt_10-25-04.46.37.ico" type="imagem/ico">
+  <style type="text/css">@import "css/parallax.css";</style>
+  <style type="text/css">@import "css/contrast.css";</style>
+  <style type="text/css">@import "css/w3.css";</style>
+  <style type="text/css">@import "css/navbar.css";</style>
+  <style>
+    body,html {height: 100%}
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+    
+    .bgimg {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("fotos/christmas-cookies-1886760_1280.jpg");
+      min-height: 100%;
+    }
+    span {
+      font-size: 100%;
+      color: #000
+    }
+    .bgimg-1,.bgimg-2,.bgimg-3 {
+      position: relative;
+      opacity: 0.95;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .bgimg-1 {
+      background-image: url("https://cdn.pixabay.com/photo/2016/11/22/23/49/book-1851268_960_720.jpg");
+      min-height: 80%;
+    }
+    .bgimg-2 {
+      background-image: url("img_parallax2.jpg");
+      min-height: 500px;
+    }
+    .bgimg-3 {
+      background-image: url("img_parallax3.jpg");
+      min-height: 500px;
+    }
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+    }
+    h3 {
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font: 20px "Lato", sans-serif;
+      color: #111;
+    }
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+    .bgimg-1,.bgimg-2,.bgimg-3 {background-attachment: scroll;}
+    }    
+
+    .dropdown:hover .dropdown-content {display: block;}
+  </style>
+</head>
+<body>
+  <!-- Navbar (sit on top) -->
+  <header class="w3-top w3-hide-small" role="navigation">
+    <nav class="w3-bar w3-xlarge w3-brown " id="myNavbar">      
+      <a href="index.html" accesskey="1"class="w3-bar-item w3-button"><img src="fotos/logo.png" class="ico" alt="Logo da empresa Frookie"></a>
+      <a href="Sobre.html"  accesskey="2" class="w3-bar-item w3-button">SOBRE NÓS </a>
+      <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" class="w3-bar-item w3-button"> Alto contraste </a>
+      <div class="dropdown">
+        <button class="dropbtn ">PRODUTO</button>
+        <div class="dropdown-content">
+          <a href="Menu.html"  accesskey="4" class="w3-bar-item w3-button">MENU </a>
+          <a href="SobreProduto.html"  accesskey="5" class="w3-bar-item w3-button">PRODUTO </a>
+        </div>
+     </div>     
+      <a href="carrinho.html"  accesskey="9" class="w3-right w3-bar-item w3-button"><img style="width: 40px; height: 38px; padding: 0px;" src="fotos/carrinhobranco.png" alt="carrinho de compras "> </a>  
+     <div class="dropdown w3-right ">
+      <button class="dropbtn ">MINHA CONTA</button>
+      <div class="dropdown-content ">
+        <a href="Cadastrar.html"  accesskey="6" class="w3-bar-item w3-button">CADASTRAR</a>
+        <a href="Login.html"  accesskey="7" class="w3-bar-item w3-button">LOGIN</a>
+        <a href="Adiministrador.html" accesskey="8" class=" w3-bar-item w3-button">Área Restrita</a>
+      </div>
+   </div>
+  </nav>
+  </header>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- About Container -->
+  <article class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+    <div class="w3-content">
+      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Sobre nós</h1>
+      <p style="font-size: 30px; text-align: justify;"> Companhia FROOKIE foi formada por Anna, Beatriz, Tomás, Victoria e Willyan, alunos
+      de Desenvolvimento de Sistemas da ETEC Dra Ruth Cardoso.
+      Tanto esse website quanto o conceito desse café fazem parte de um projeto do curso,
+      ministrado pelos professores (DENISE APARECIDA OLIVEIRA DA SILVA, DANIELA TERESA ROSSIGNOLI UEBELE, 
+      NATHALIA BIELSKI TAVARES, FRANCIS AKEMI NITTO SIMÕES, ROSELI FERNANDES ROCHA). O objetivo do projeto é
+      fazer os alunos simularem vivências como empreendedores de um pequeno negócio,
+      com total responsabilidade por todos os aspectos de seu comércio, e, quem sabe,
+      levar o negócio adiante.</p><br><br>
+      
+      <!--<a href="DIAGRAMA CASO DE USO_1.pdf" title="Manual Identidade Visual" target="_blank" class="w3-hover-text-brown"> Manual Identidade Visual</a>-->
+      
+      <p style="font-size: 30px;"><b>Sobre os autores</b></p>
+      <p style="font-size: 30px;"><b>Willyan Ribeiro Brigatto</b></p><img src="fotos/Willyan.jpg" style="width:150px; margin-left: 20px;;"
+      class="w3-circle w3-right" alt="Fundador da Frookie">
+      <p style="font-size: 30px; text-align: justify;">A refeição favorita de Willyan é o café da tarde, especiamente se acompanha bolo.
+        Ele tem 19 anos, mora em São Vicente e adora palavras.</p>
+      <br>
+      <p style="font-size: 30px;"><b>Victória Cabral Quintério</b></p><img src="fotos/Victoria.jpg" style="width:150px; margin-left: 20px;"
+      class="w3-circle w3-right" alt="Fundadora da Frookie">
+      <p style="font-size: 30px; text-align: justify;">Gosta de cappuccino,mas se tiver um bolo de cenoura com cobertura de chocolate... que combinação!
+        18 anos, mora na Praia Grande e é geek</p>
+      <br>
+      <p style="font-size: 30px;"><b>Tomás Moraes Soares</b></p><img src="fotos/Tomas.jpg" style="width:150px; margin-left: 20px;"
+      class="w3-circle w3-right" alt="Fundador da Frookie">
+      <p style="font-size: 30px; text-align: justify;">Há um ano, descobriu seu apreço por duas bebidas maravilhosas: cappuccino gelado - de preferência sem chantilly - e um cafézinho com licor de menta ou de chocolate. Um bolo de nozes ou red velvet também sempre cai bem.
+        18 anos, mora em São Vicente e é amante das artes - especialmente música e cinema.</p>
+      <br>
+      <p style="font-size: 30px;"><b>Anna Carolina Cavalheiro de Souza</b></p><img src="fotos/Ana.jpg" style="width:150px; margin-left: 20px;"
+      class="w3-circle w3-right" alt="Fundadora da Frookie">
+      <p style="font-size: 30px; text-align: justify;">Apaixonada por mocaccino, acredita que não há nada melhor do que um pedaço de bolo de chocolate com canela pela manhã.
+        Tem 17 anos, mora em São Vicente e ama literatura.</p>
+      <br>
+      <p style="font-size: 30px;"><b>Beatriz Harue Aquino Soares de Souza Lima</b></p><img src="fotos/Beatriz.jpg" style="width:150px; margin-left: 20px;"
+      class="w3-circle w3-right" alt="Fundadora da Frookie">
+      <p style="font-size: 30px; text-align: justify;">Ama leite com chocolate e uma boa tapioca de fim de tarde. De preferência, bem recheada.
+        Tem 17 anos, mora em São Vicente e ama ouvir música. </p>
+      <br><br>
+      <img src="fotos/ETEQUINHA.jpg" style="width: 45,5%;" class="w3-margin-top w3-margin-bottom" alt="ETÉQUE">
+    </div>
+  </article>
+  <table style="background-color: #DEB887;">
+    <tr>
+      <td><img src="fotos/coffee-2319266_960_720.jpg" style="width:100%; height:auto; opacity: 0.65;" class="animade" /></td>
+      <td>
+        <p style="text-align: right; font-size: 30px; color: black; margin: 12px; " class="w3-justify"><b>MISSÃO</b></p>
+        <b><p style="text-align: right; font-size: 30px; color: black; margin: 12px;" class="w3-justify">
+        Proporcionar um espaço de incentivo à experimentação do novo,<br> apoiado no conforto do que já é familiar e
+        conhecido. Aperfeiçoar receitas e <br>produtos de gosto popular para que ninguém faça como nós fazemos. Acolher gostos
+        pessoais de diversos tipos, desde os mais simples e tradicionais aos <br>mais aventureiros. Usar o espaço do café para
+        promover o lazer, a pesquisa, <br>o estudo, a arte e a cultura local.</b></p>
+      </td>
+    </tr>
+  </table>
+  <table style="background-color: rgb(207, 158, 98);">
+    <tr>
+      <td><p style="text-align: left; font-size: 30px; color: black; margin: 12px;" class="w3-justify"><b>VISÃO</b></p>
+        <b><p style="text-align: left; font-size: 30px; color: black; margin: 12px;" class="w3-justify">Tornar-se referência no ramo
+        dos café tanto para o público jovem <br>quanto para os mais velhos. Ser a primeira opção como veículo de divulgação 
+        <br>do trabalho de artistas independentes. Ganhar confiança e visibilidade o <br> suficiente para que a comunidade Frookie
+        ultrapasse o status apenas de cafeteria para se tornar um agente do incentivo e
+        desenvolvimento à cultura nacional culinária e artística.</b></p>
+      </td>
+      <td><img src="fotos/coffee-3512027_960_720.jpg" style="width:100%; height:auto; opacity: 0.75;" /></td>
+    </tr>
+  </table>
+  <table style="background-color: rgb(163, 121, 84);">
+    <tr>
+      <td><img src="fotos/coffee-2540277_960_720.jpg" style="width:100%; height:auto; opacity: 0.55;" /></td>
+      <td><p style="text-align: right; font-size: 30px; color: black; margin: 12px;" class="w3-justify"><b>VALORES</b></p>
+        <b><p style="text-align: right; font-size: 30px; color: black; margin: 12px;" class="w3-justify">Celebrar e incentivar a 
+        diversidade cultural tanto em nossos produtos <br>quanto entre nossos colaboradores, clientes e funcionários. 
+        Prezar pela natureza e o desenvolvimento sustentável. <br>Apoiar a produção local de matéria prima. 
+        Trabalhar fundamentando-se no respeito, na compreensão, na empatia e na criatividade. <br>Firmar compromisso com a
+        qualidade e apresentação de nossos serviços.</b></p>
+      </td>      
+    </tr>
+  </table>
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-48 w3-xlarge">   
+      <!--Container e margin junto arruma o texto deixa ele com margem e o justify deixa o texto justificado-->
+      <div class="w3-margin">
+          <p align="left"> Fale conosco: (13) 3467-2955 ou nos <a href="Contato.html" target="_blank" accesskey="0" class="w3-hover-text-brown">envie uma mensagem</a> </p>
+        <p align="left"><b>Horário de funcionamento</b></p>
+        <div class="w3-col s6">
+          <p align="left">Segunda a Sexta feira <time>9:00 ás 21:00</time></p>
+          <p align="left">Sábado <time>9:00 ás 18:00</time></p>
+          <p align="left">Domingo Fechado</p>
+        </div>
+     </div>
+      <!--Coodernada do maps-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14583.464185540168!2d-46.3835947!3d-23.9651765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x118a947878b90924!2sETEC%20Dra.%20Ruth%20Cardoso!5e0!3m2!1spt-BR!2sbr!4v1571594848269!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <p align="right">Endereço: Praça Cel. Lopes, 387 - Centro, São Vicente - SP, 11310-020&nbsp; &nbsp;</p>
+      <p>Criado por <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-brown">Frookie</a></p> 
+    </footer>
+    <script src="./js/high-contrast.js"></script>
+</body>
+</html>

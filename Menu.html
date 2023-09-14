@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="icon" href="fotos/PicsArt_10-25-04.46.37.ico" type="imagem/ico">
+    <style type="text/css">@import "css/contrast.css";</style>
+    <style type="text/css">@import "css/w3.css";</style>
+    <style type="text/css">@import "css/navbar.css";</style>
+    <style>
+      body, html {height: 100%}
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+      .menu {display: none}
+      .bgimg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("fotos/christmas-cookies-1886760_1280.jpg");
+        min-height: 100%;
+      }
+      span { font-size: 200px; }
+    </style>                
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<header class="w3-top w3-hide-small" role="navigation">
+  <nav class="w3-bar w3-xlarge w3-brown " id="myNavbar">      
+    <a href="index.html" accesskey="1"class="w3-bar-item w3-button"><img src="fotos/logo.png" class="ico" alt="Logo da empresa Frookie"></a>
+    <a href="Sobre.html"  accesskey="2" class="w3-bar-item w3-button">SOBRE NÓS </a>
+    <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" class="w3-bar-item w3-button"> Alto contraste </a>
+    <div class="dropdown">
+      <button class="dropbtn ">PRODUTO</button>
+      <div class="dropdown-content">
+        <a href="Menu.html"  accesskey="4" class="w3-bar-item w3-button">MENU </a>
+        <a href="SobreProduto.html"  accesskey="5" class="w3-bar-item w3-button">PRODUTO </a>
+      </div>
+   </div>     
+    <a href="carrinho.html"  accesskey="9" class="w3-right w3-bar-item w3-button"><img style="width: 40px; height: 38px; padding: 0px;" src="fotos/carrinhobranco.png" alt="carrinho de compras "> </a>  
+   <div class="dropdown w3-right ">
+    <button class="dropbtn ">MINHA CONTA</button>
+    <div class="dropdown-content ">
+      <a href="Cadastrar.html"  accesskey="6" class="w3-bar-item w3-button">CADASTRAR</a>
+      <a href="Login.html"  accesskey="7" class="w3-bar-item w3-button">LOGIN</a>
+      <a href="Adiministrador.html" accesskey="8" class=" w3-bar-item w3-button">Área Restrita</a>
+    </div>
+ </div>
+</nav>
+</header>
+
+ <!-- Conteúdo da página -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+   
+  <!-- Menu Container -->
+  <section class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+    <section class="w3-content">
+    
+      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"> MENU</h1>
+      <aside class="w3-row w3-center w3-border w3-border-dark-grey">
+        <a href="javascript:void(1)" onclick="openMenu(event, 'Café');" id="myLink">
+          <aside class="w3-col s4 tablink w3-padding-large w3-hover-red">Café</aside>
+        </a>
+        <a href="javascript:void(2)" onclick="openMenu(event, 'Doces');">
+          <aside class="w3-col s4 tablink w3-padding-large w3-hover-red">Doces</aside>
+        </a>
+        <a href="javascript:void(3)" onclick="openMenu(event, 'Salgados');">
+          <aside class="w3-col s4 tablink w3-padding-large w3-hover-red">Salgados</aside>
+        </a>
+      </aside>
+  
+      <aside  id="Café" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Macchiatto</b> <h1 class="w3-right w3-tag w3-dark-grey w3-round">R$5.50</h1></h1>
+        <p class="w3-text-grey">Expresso misturado com um pouco de leite quente espumoso</p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd1">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Macchiatto', document.getElementById('qtd1').value, '5.50', 1)"> Comprar </button>
+        <hr>
+     
+        <h1><b>Expresso</b> <h1 class="w3-right w3-tag w3-dark-grey w3-round">R$3.50</h1></h1>
+        <p class="w3-text-grey">Típico café preto</p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd2">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Expresso', document.getElementById('qtd2').value, '3.50', 2)"> Comprar </button>
+        <hr>
+        
+        <h1><b>Americano</b> <h1 class="w3-right w3-tag w3-dark-grey w3-round">R$5.00</h1></h1>
+        <p class="w3-text-grey">Café expresso com água quente</p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd3">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Americano', document.getElementById('qtd3').value, '5.00', 3)"> Comprar </button>
+        <hr>
+  
+        <h1><b>Capuccino</b> <h1 class="w3-right w3-tag w3-dark-grey w3-round">R$6.50</h1></h1>
+        <p class="w3-text-grey">Café expresso e leite quente coberto com espuma de leite</p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd4">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Capuccino', document.getElementById('qtd4').value, '6.50', 4)"> Comprar </button>
+        <hr>
+  
+        <h1><b>Chocolate </b><h1 class="w3-right w3-tag w3-dark-grey w3-round">R$3.00</h1></h1>
+        <p class="w3-text-grey">Chocolate Quente</p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd5">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Chocolate', document.getElementById('qtd5').value, '3.00', 5)"> Comprar </button>
+        <hr>
+  
+        <h1><b>Chá</b><h1 class="w3-right w3-tag w3-dark-grey w3-round">R$4.00</h1></h1>
+        <p class="w3-text-grey">Chá quente e Chá gelado</p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd6">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Chá', document.getElementById('qtd6').value, '4.00', 6)"> Comprar </button>
+      </aside>
+     
+      <aside id="Doces" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Biscoito de Carambola</b><h1 class="w3-tag w3-grey w3-round">Novo</h1> <h1 class="w3-right w3-tag w3-dark-grey w3-round">R$4.50</h1></h1>
+        <p class="w3-text-grey"> </p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd7">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Star fruit', document.getElementById('qtd7').value, '4.50', 7)"> Comprar </button>
+        <hr>
+        
+        <h1><b>Bolo</b> <h1 class="w3-right w3-tag w3-dark-grey w3-round">R$5,90</h1></h1>
+        <p class="w3-text-grey"> </p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd8">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bolo', document.getElementById('qtd8').value, '5.90', 8)"> Comprar </button>
+        <hr>
+  
+        <h1><b>Brownie</b> <h1 class="w3-right w3-tag w3-dark-grey w3-round">R$5,00</h1></h1>
+        <p class="w3-text-grey"> </p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd9">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Brownie', document.getElementById('qtd9').value, '5.00', 9)"> Comprar </button>
+        <hr>
+
+        <h1><b>Coockie</b> <h1 class="w3-tag w3-grey w3-round">Popular</h1> <h1 class="w3-right w3-tag w3-dark-grey w3-round">R$3.50</h1></h1>
+        <p class="w3-text-grey"> </p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd10">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Coockie', document.getElementById('qtd10').value, '3.50', 10)"> Comprar </button>
+        <hr>
+      </aside>
+  
+      <aside  id="Salgados" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Pão de queijo</b> <h1 class="w3-tag w3-grey w3-round">Seasonal</h1><h1 class="w3-right w3-tag w3-dark-grey w3-round">R$3,50</h1></h1>
+        <p class="w3-text-grey">Peça para o graçom</p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd11">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Pão de queijo', document.getElementById('qtd11').value, '3.50', 11)"> Comprar </button>
+        <hr>
+     
+        <h1><b>Empada</b> <h1 class="w3-right w3-tag w3-dark-grey w3-round">R$5.50</h1></h1>
+        <p class="w3-text-grey"> </p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd12">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Empada', document.getElementById('qtd12').value, '5.50', 12)"> Comprar </button>
+        <hr>
+        
+        <h1><b>Coxinha</b> <h1 class="w3-right w3-tag w3-dark-grey w3-round">R$5.00</h1></h1>
+        <p class="w3-text-grey"> </p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd13">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Coxinha', document.getElementById('qtd13').value, '5.00', 13)"> Comprar </button>
+        <hr>
+        
+        <h1><b>Pastel de forno</b> <h1 class="w3-right w3-tag w3-dark-grey w3-round">R$5.50</h1></h1>
+        <p class="w3-text-grey"> </p>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd14">
+        <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Pastel de forno', document.getElementById('qtd14').value, '5.50', 14)"> Comprar </button>
+      </aside><br>
+    </section>  
+    
+  </section>
+  <script>
+      function AddCarrinho(produto, qtd, valor, posicao)
+      {
+        localStorage.setItem("produto" + posicao, produto);
+        localStorage.setItem("qtd" + posicao, qtd);
+        valor = valor * qtd;
+        localStorage.setItem("valor" + posicao, valor);
+        alert("Produto adicionado ao carrinho!");
+      }
+  </script>  
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-48 w3-xlarge">
+    <!--Container e margin junto arruma o texto deixa ele com margem e o justify deixa o texto justificado-->
+    <div class="w3-margin">
+        <p align="left"> Fale conosco: (13) 3467-2955 ou nos <a href="Contato.html" accesskey="0" target="_blank" class="w3-hover-text-brown">envie uma mensagem</a> </p>     
+        <p align="left"><b>Horário de funcionamento</b></p>
+        <div class="w3-col s6">
+          <p align="left">Segunda a Sexta feira <time>9:00 ás 21:00</time></p>
+          <p align="left">Sábado <time>9:00 ás 18:00</time></p>
+          <p align="left">Domingo Fechado</p>
+        </div>
+     </div>
+      <!--Coodernada do maps-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14583.464185540168!2d-46.3835947!3d-23.9651765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x118a947878b90924!2sETEC%20Dra.%20Ruth%20Cardoso!5e0!3m2!1spt-BR!2sbr!4v1571594848269!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <p align="right">Endereço: Praça Cel. Lopes, 387 - Centro, São Vicente - SP, 11310-020&nbsp; &nbsp;</p>
+      <p>Criado por <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-brown">Frookie</a></p> 
+  </footer>
+  <script src="./js/high-contrast.js"></script>
+  <script>
+  // Tabbed Menu
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-red";
+  }
+  document.getElementById("myLink").click();
+  </script>    
+</body>
+</html>

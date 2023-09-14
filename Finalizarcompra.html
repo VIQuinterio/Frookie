@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Finalizar Compra </title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="icon" href="fotos/PicsArt_10-25-04.46.37.ico" type="imagem/ico">
+<style type="text/css">@import "css/contrast.css";</style>
+<style type="text/css">@import "css/w3.css";</style>
+<style>@font-face { font-family: Amatic SC ;src: url(fonte/amatic-sc.ttf); }</style>
+
+<style>
+.btn {
+  background: #ab1616;
+  background-image: -webkit-linear-gradient(top, #4D3A29, #4D3A29);
+  background-image: -moz-linear-gradient(top, #4D3A29, #4D3A29);
+  background-image: -ms-linear-gradient(top, #4D3A29, #4D3A29);
+  background-image: -o-linear-gradient(top, #4D3A29, #4D3A29);
+  background-image: linear-gradient(to bottom,  rgb(255, 247, 134), rgb(255, 247, 134));
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 2px;
+  background-image: -ms-linear-gradient(top, #4D3A29, #4D3A29);
+  color: #4D3A29;
+  font-family: Amatic SC;
+  font-size: 30px;
+  padding: 5px 15px;
+  border: solid #4D3A29 1px;
+  text-decoration: none;
+}
+.btn {
+	cursor: pointer;
+}
+
+.prod{
+	font-size: 80%;	
+}
+</style>	
+</head>
+
+<body bgcolor="#F5DEB3">
+	<section class="w3-container w3-brown w3-padding-12 w3-xlarge" id="menu">
+		<section class="w3-content">
+		  <h1 class="w3-center w3-jumbo w3-padding-32" style="color:honeydew" style="margin-bottom:10px; font-size: 80px;"> <font face="AmatiC SC" > CARRINHO </font></h1>	  
+		</section>  
+	</section>
+	<div id="itens" class="w3-container menu w3-padding-32 w3-black" style="font-size: 250%; font-family: Amatic SC" > </div>
+		<div style="width:5px; height:2px; font-size:55px; font-family: Amatic SC"> <b> Total </b> </div>
+	<div style="font-size: 50px;"><span id="total" class="w3-right w3-tag w3-dark-grey w3-round" style="width:190px; height:90px; font-size: 60px"></span> </div>		
+<script> 
+ var total = 0; // variável que retorna o total dos produtos que estão na LocalStorage.
+ var i = 0;     // variável que irá percorrer as posições
+ var valor = 0; // variável que irá receber o preço do produto convertido em Float.
+ 
+ for(i=1; i<=99; i++) // verifica até 99 produtos registrados na localStorage
+ {
+	 var prod = localStorage.getItem("produto" + i + ""); // verifica se há recheio nesta posição. 
+	 if(prod != null) 
+	 {	
+		 // exibe os dados da lista dentro da div itens
+		 
+		 document.getElementById("itens").innerHTML += localStorage.getItem("qtd" + i) + " x ";
+		 document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
+		 document.getElementById("itens").innerHTML += " ";
+		 document.getElementById("itens").innerHTML += "R$: " + localStorage.getItem("valor" + i) + "<hr>";
+		 
+		 // calcula o total dos recheios
+		 valor = parseFloat(localStorage.getItem("valor" + i)); // valor convertido com o parseFloat()
+		 total = (total + valor); // arredonda para 2 casas decimais com o .toFixed(2)
+	}
+ } 
+ // exibe o total dos recheios
+ document.getElementById("total").innerHTML = total.toFixed(2); 
+
+ </script> 
+<br><br><br><br><br>
+&nbsp; &nbsp; <button type="button"  onclick="alert('Compra realizada com sucesso')" class="btn"> <b> Finalizar compra </b> </button> 
+&nbsp; &nbsp;
+<button type="button" onclick="window.location.href='carrinho.html'" class="btn"> <b> Voltar </b> </button>
+</body> 
+</html>

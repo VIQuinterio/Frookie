@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Frookie</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <link rel="icon" href="fotos/PicsArt_10-25-04.46.37.ico" type="imagem/ico">
+  <style type="text/css">@import "css/parallax.css";</style>
+  <style type="text/css">@import "css/contrast.css";</style>
+  <style type="text/css">@import "css/w3.css";</style>
+  <style type="text/css">@import "css/navbar.css";</style>
+  <style>
+    body, html {height: 100%}
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+    @font-face {font-family: Amatic SC;src: url(fonte/amatic-sc.ttf);}
+    .menu {display: none}
+
+    .bgimg {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("fotos/christmas-cookies-1886760_1280.jpg");
+      min-height: 100%;
+      }
+    .parallax {
+    /* Coloque a imagem a ser usada como background */
+      background-image: url("fotos/beverage-1869598_1920.jpg"); 
+    /* Defina uma altura para a visão que o usuário terá da imagem */
+      min-height: 800px;
+    /* defina o background como fixo e posicione a imagem */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    span { font-size: 200px; }
+    body, html {margin: 0; color: #777;}
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      position: relative;
+      opacity: 0.65;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+        
+    }
+    .bgimg-1 {
+      background-image: url("fotos/biscoitocarambola.jpeg");
+      min-height: 90%;      
+    }
+    .bgimg-2 {
+      background-image: url("img_parallax2.jpg");
+      min-height: 500px;
+    }
+    .bgimg-3 {
+      background-image: url("img_parallax3.jpg");
+      min-height: 500px;
+    } 
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+    } 
+    h3 {
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #111;
+    }
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {background-attachment: scroll;}
+    }
+    
+    </style>               
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<header class="w3-top w3-hide-small" role="navigation">
+    <nav class="w3-bar w3-xlarge w3-brown " id="myNavbar">      
+      <a href="index.html" accesskey="1"class="w3-bar-item w3-button"><img src="fotos/logo.png" class="ico" alt="Logo da empresa Frookie"></a>
+      <a href="Sobre.html"  accesskey="2" class="w3-bar-item w3-button">SOBRE NÓS </a>
+      <a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" class="w3-bar-item w3-button"> Alto contraste </a>
+      <div class="dropdown">
+        <button class="dropbtn ">PRODUTO</button>
+        <div class="dropdown-content">
+          <a href="Menu.html"  accesskey="4" class="w3-bar-item w3-button">MENU </a>
+          <a href="SobreProduto.html"  accesskey="5" class="w3-bar-item w3-button">PRODUTO </a>
+        </div>
+     </div>     
+      <a href="carrinho.html"  accesskey="9" class="w3-right w3-bar-item w3-button"><img style="width: 40px; height: 38px; padding: 0px;" src="fotos/carrinhobranco.png" alt="carrinho de compras "> </a>  
+     <div class="dropdown w3-right ">
+      <button class="dropbtn ">MINHA CONTA</button>
+      <div class="dropdown-content ">
+        <a href="Cadastrar.html"  accesskey="6" class="w3-bar-item w3-button">CADASTRAR</a>
+        <a href="Login.html"  accesskey="7" class="w3-bar-item w3-button">LOGIN</a>
+        <a href="Adiministrador.html" accesskey="8" class=" w3-bar-item w3-button">Área Restrita</a>
+      </div>
+   </div>
+  </nav>
+</header>
+  <div class="parallax">
+  <!-- Header with image -->
+  <p class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <p class="w3-display-middle w3-center">
+      <span class="w3-text-black w3-hide-small w3-center" style="font-size:50px"><br>
+        &nbsp; &nbsp;&nbsp; &nbsp;<span><b><img src="fotos/logo.png" alt="Logo da empresa Frookie" width="80%" height="80%"></b></span>  
+        <span class="w3-tag w3-xlarge">Aberto das 9 da manhã até as 21 horas da noite</span>
+      </p>
+    </p>
+  </div>  
+ <!-- Conteúdo da página -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <article class="w3-container w3-padding-16 w3-red w3-grayscale w3-xlarge">
+  <div class="w3-content">
+      <span class="w3-center w3-jumbo" style="margin-bottom:16px"><b><br>LANÇAMENTO DA CAFETERIA FROOKIE: SEU CAFÉ MAIS GOSTOSO COM COOKIE.</b></span><br><br><br>
+  </div>
+</article>
+  <div class="bgimg-1">
+      <div class="caption">
+        <span class="border"class="w3-black" style="font-size:50px"><b>BISCOITO DE CARAMBOLA</b></span>
+      </div>
+  </div> 
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-48 w3-xlarge">
+   <!--Container e margin junto arruma o texto deixa ele com margem e o justify deixa o texto justificado-->
+   <div class="w3-margin">
+     <p align="left"> Fale conosco: (13) 3467-2955 ou nos <a href="Contato.html" target="_blank" accesskey="0" class="w3-hover-text-brown">envie uma mensagem</a> </p>
+      <p align="left"><b>Horário de funcionamento</b></p>
+      <div class="w3-col s6">
+        <p align="left">Segunda a Sexta feira <time>9:00 ás 21:00</time></p>
+        <p align="left">Sábado <time>9:00 ás 18:00</time></p>
+        <p align="left">Domingo Fechado</p>
+      </div>
+   </div>
+    <!--Coodernada do maps-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14583.464185540168!2d-46.3835947!3d-23.9651765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x118a947878b90924!2sETEC%20Dra.%20Ruth%20Cardoso!5e0!3m2!1spt-BR!2sbr!4v1571594848269!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <p align="right">Endereço: Praça Cel. Lopes, 387 - Centro, São Vicente - SP, 11310-020&nbsp; &nbsp;</p>
+    <p>Criado por <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-brown">Frookie</a></p> 
+  </footer>
+  <script src="./js/high-contrast.js"></script>
+</body>
+</html>
